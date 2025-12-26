@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to right,rgb(0, 0, 156),black);
+}
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    animation: fade-in 0.8s;
+}
+.Top{
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.search{
+    display: flex;
+    border-radius: 10px;
+    background: rgb(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+}
+.city{
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+.search input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: "Roboto", sans-serif;
+    width: 230px;
+    padding-left: 10px;
+}
+.search button{
+    border: none;
+    outline: none;
+    background: transparent;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+.cross button{
+    border: none;
+    outline: none;
+    background: transparent;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.mid{
+    display: flex;
+    gap: 10px;
+    align-items: last baseline;
+}
+middle{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    animation: fade-in 0.8s;
+    background-image: url(anime1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    animation: anime 4s ease-in-out infinite alternate;
+}
+.middle{
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mright{
+    display: flex;
+    color: white;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+.degree h2{
+    font-size: 100px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+.c p{
+    color: white;
+}
+.temp{
+    display: flex;
+}
+.humidity{
+    display: flex;
+}
+.wind{
+    display: flex;
+}
+.mright img{
+    margin-right: 10px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    animation: fade-in 0.8s;
+}
+.box{
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    background: rgb(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes anime {
+    from { background-image: url(anime1.png); }
+    to { background-image: url(anime2.png); }
+}
+@media screen and (max-width:600px) {
+    .search input{
+        width: 100px;
+    }
+    .city{
+        font-size: 8px;
+    }
+    .degree h2{
+    font-size: 50px;
+    }
+    .img img{
+        display: none;
+    }
+    .box{
+        gap: 5px;
+        display: unset;
+    }
+    .one{
+        border-bottom: 2px solid white;
+    }
+    .two{
+        border-bottom: 2px solid white;
+    }
+    .three{
+        border-bottom: 2px solid white;
+    }
+    .four{
+        border-bottom: 2px solid white;
+    }
+    .five{
+        border-bottom: 2px solid white;
+    }
+    header{
+        margin-top: 10px;
+    }
+    middle{
+        margin-top: 10px;
+        background-image: none;
+        animation: none;
+    }
+    footer{
+        margin-top: 10px;
+    }
+    .search button{
+        padding: 5px;
+    }
+    .cross button{
+        padding: 5px;
+    }
+    .right{
+        gap: 5px;
+    }
+}
