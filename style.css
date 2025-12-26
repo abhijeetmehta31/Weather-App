@@ -71,7 +71,7 @@ middle{
     justify-content: center;
     margin-top: 20px;
     animation: fade-in 0.8s;
-    background-image: url(anime1.png);
+    background-image: url(images/anime1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100px;
@@ -137,8 +137,8 @@ footer{
   to { opacity: 1; transform: scale(1); }
 }
 @keyframes anime {
-    from { background-image: url(anime1.png); }
-    to { background-image: url(anime2.png); }
+    from { background-image: url(images/anime1.png); }
+    to { background-image: url(images/anime2.png); }
 }
 @media screen and (max-width:600px) {
     .search input{
